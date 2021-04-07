@@ -1,0 +1,38 @@
+.timeLineContainer {
+	position: relative;
+}
+
+.timeLineContainer .scrollBtns {
+	position: absolute;
+	margin-top: -370px;
+	width: 100%;
+	left: 0;
+}
+
+.timeLineContainer .scrollBtns #left_scroll {
+	margin-left: -15px;
+}
+
+.timeLineContainer .scrollBtns #right_scroll {
+	margin-right: -15px;
+}
+
+.totalTimeLine {
+	padding: 250px 0 40px;
+	margin-top: -250px;
+	overflow: hidden;
+}
+
+@media (max-width:767px) { 
+    .timeLineContainer .scrollBtns {
+		position: relative;
+		margin-top: -80px;
+	}
+}
+
+
+@media (max-width:576px) { 
+    .timeLineContainer .scrollBtns {
+        margin-top: -100px;
+    }
+}
