@@ -1,0 +1,440 @@
+.historyNew {
+	float: left;
+	width: 100%;
+}
+.historyNew .innerhistory {
+	width: 100%;
+	height: 10px;
+	background: #008F42;
+	position: relative;
+	margin-top: 250px;
+	padding: 0px 100px;
+	box-shadow: 0 0 20px #008F42;
+}
+.historyNew .innerhistory:after {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: -1px;
+	background-color: #008F42;
+	width: 30px;
+	height: 30px;
+	z-index: 99;
+	border-radius: 23px;
+	box-shadow: 0 0 20px #008F42;
+}
+.historyNew .innerhistory:before {
+	content: "";
+	position: absolute;
+	top: -3px;
+	right: -13px;
+	bottom: auto;
+	border-bottom: 15px solid #008F42;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	height: 0px;
+	width: 0px;
+	z-index: 100;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+}
+
+.historyNew .timeLineContainer {
+	position: relative;
+}
+
+.historyNew .timeLineContainer .scrollBtns {
+	position: absolute;
+	margin-top: -370px;
+	width: 100%;
+	left: 0;
+}
+
+.historyNew .timeLineContainer .scrollBtns button {
+	background: #008F42;
+	color: #fff;
+	height: 40px;
+	width: 40px;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.historyNew .timeLineContainer .scrollBtns #left_scroll {
+	margin-left: -15px;
+}
+
+.historyNew .timeLineContainer .scrollBtns #right_scroll {
+	margin-right: -15px;
+}
+
+.historyNew .timeLineContainer .scrollBtns button:hover {
+	box-shadow: 0 0 20px #008F42;
+}
+
+.historyNew .totalTimeLine {
+	padding: 250px 0 40px;
+	margin-top: -250px;
+	overflow: hidden;
+}
+.historyNew .his-inner {
+	float: left;
+	height: 450px;
+	text-align: center;
+	position: relative;
+	margin: -225px -20px 0;
+}
+
+.historyNew .his-inner i {
+	position: absolute;
+	left: 0;
+	right: 0px;
+	margin: 0 auto;
+	bottom: 0px;
+	width: 90px;
+	height: 90px;
+	font-size: 40px;
+	color: #fff;
+	border-radius: 50%;
+	margin-top: 155px;
+	background-color: #008F42;
+	padding-top: 22px;
+	border: 3px solid transparent;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	-ms-transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+}
+.historyNew .his-inner:hover i {
+	border: 3px solid #008F42;
+	color: #008F42;
+	background: #fff;
+	box-shadow: 0 0 20px #008F42;
+}
+
+.historyNew .his-inner:hover::after {
+	box-shadow: 0 0 20px #008F42;
+}
+.historyNew .text-wrap {
+	position: absolute;
+	bottom: 55%;
+}
+
+.historyNew .text-wrap h4 {
+	color: #000 !important;
+	font-size: 28px;
+	font-weight: 700;
+	font-family: 'OpenSans-Bold';
+}
+.historyNew .text-wrap p {
+	font-size: 22px;
+	line-height: 30px;
+	padding: 10px 5px;
+}
+
+.historyNew .his-inner:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #008F42;
+	width: 5px;
+	height: 50%;
+	z-index: -1;
+	margin-left: -3px;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	-ms-transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+}
+.historyNew .his-inner:nth-child(odd):after {
+	top: 0;
+}
+.historyNew .his-inner:nth-child(odd) i {
+	margin-top: 0px;
+	position: absolute;
+	left: 0;
+	right: 0px;
+	margin: 0 auto;
+	bottom: auto;
+	top: 0px;
+}
+.historyNew .his-inner:nth-child(odd) .text-wrap {
+	position: absolute;
+	bottom: auto;
+	top: 55%;
+}
+.historyNew .titltow {
+	text-align: center;
+}
+.historyNew .titltow .title-text:after {
+	display: none;
+}
+.historyNew .titltow .title-text {
+	font-size: 35px;
+	margin: 0;
+	margin-top: 30px;
+}
+
+
+@media (max-width:1200px) {
+	.historyNew .text-wrap h4 {
+		font-size: 25px;
+		font-weight: 700;
+	}
+	.historyNew .text-wrap p {
+		font-size: 21px;
+		line-height: 25px;
+	}
+}
+
+
+@media (max-width:991px) {
+	.historyNew .timeLineContainer .scrollBtns {
+		margin: 0;
+	}
+	
+	.historyNew .timeLineContainer .scrollBtns #left_scroll {
+		margin-left: 0px;
+		margin-right: 40px;
+	}
+
+	.historyNew .timeLineContainer .scrollBtns #right_scroll {
+		margin-right: 0px;
+		margin-left: 40px;
+	}	
+
+	.historyNew .text-wrap h4 {
+		font-size: 23px;
+		font-weight: 700;
+	}
+	.historyNew .text-wrap p {
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	.historyNew .totalTimeLine {
+		overflow-x: scroll;
+		padding-bottom: 30px;
+	}
+
+	.historyNew .timeLineContainer {
+		padding-bottom: 30px;
+	}
+
+	.historyNew .totalTimeLine::-webkit-scrollbar {
+		width: 0px;
+		height: 0px;
+	}
+}
+
+
+@media (max-width:767px){
+    .historyNew .fontsig {
+        font-size: 40px;
+        margin-top: -55px;
+	}
+
+	.historyNew .innerhistory {
+		height: 7px;
+	}
+
+	.historyNew .innerhistory:before {
+		border-bottom: 12px solid #008F42;
+		border-right: 12px solid transparent;
+		border-left: 12px solid transparent;
+	}
+
+	.historyNew .innerhistory:after {
+		height: 25px;
+		width: 25px; 
+	}
+
+	.historyNew .headtitle {
+		padding: 20px 0 40px 0;
+	}
+
+	.historyNew .totalTimeLine {
+		padding: 140px 0px 30px;
+	}
+
+	.historyNew .totalTimeLine .his-inner {
+		margin-top: -165px;
+	}
+
+	.historyNew .his-inner .text-wrap {
+		margin-bottom: -50px;
+	}
+
+	.historyNew .his-inner .text-wrap p {
+		line-height: 21px;
+		font-size: 20px;
+	}
+
+	.historyNew .his-inner:after {
+		height: 40%;
+		top: 60%;
+	}
+
+	.historyNew .his-inner i {
+		width: 80px;
+		height: 80px;
+		font-size: 30px;
+	}
+
+	.historyNew .his-inner:nth-child(odd) {
+		margin-top: -70px;
+	}
+
+	.historyNew .his-inner:nth-child(odd):after {
+		height: 40%;
+	}
+
+	.historyNew .his-inner:nth-child(odd) .text-wrap {
+		margin-top: -50px;
+	}
+
+	.historyNew .his-inner:nth-child(odd) .text-wrap p {
+		line-height: 21px;
+		font-size: 20px;
+	}
+
+	.historyNew .innerhistory {
+		height: 5px;
+		margin-top: 220px;
+	}
+
+	.historyNew .innerhistory:after {
+		height: 23px;
+		width: 23px;
+	}
+
+
+	.historyNew .innerhistory:before {
+		border-bottom: 10px solid #008F42;
+		border-right: 10px solid transparent;
+		border-left: 10px solid transparent;
+	}
+
+	.historyNew .timeLineContainer {
+		padding-bottom: 0px;
+	}
+
+	.historyNew .timeLineContainer .scrollBtns {
+		position: relative;
+		margin-top: -80px;
+	}
+}
+
+@media (max-width:576px){
+	.historyNew .headtitle {
+		padding: 20px 0 !important;
+	}
+
+	.historyNew .headtitle h2 {
+		font-size: 30px;
+	}
+
+	.historyNew .innerhistory {
+		height: 7px;
+	}
+
+	.historyNew .innerhistory:before {
+		border-bottom: 12px solid #008F42;
+		border-right: 12px solid transparent;
+		border-left: 12px solid transparent;
+	}
+
+	.historyNew .innerhistory:after {
+		height: 25px;
+		width: 25px; 
+	}
+
+	.historyNew .headtitle {
+		padding: 20px 0 40px 0;
+	}
+
+	.historyNew .totalTimeLine {
+		padding: 140px 0px 30px;
+		margin: -250px 10px 0;
+	}
+
+	.historyNew .totalTimeLine .his-inner {
+		margin-top: -178px;
+	}
+
+	.historyNew .his-inner .text-wrap {
+		margin-bottom: -70px;
+	}
+
+	.historyNew .his-inner .text-wrap p {
+		line-height: 21px;
+		font-size: 18px;
+	}
+
+	.historyNew .his-inner:after {
+		height: 37%;
+		top: 63%;
+	}
+
+	.historyNew .his-inner i {
+		width: 80px;
+		height: 80px;
+		font-size: 30px;
+	}
+
+	.historyNew .his-inner:nth-child(odd) {
+		margin-top: -57px;
+	}
+
+	.historyNew .his-inner:nth-child(odd):after {
+		height: 37%;
+	}
+
+	.historyNew .his-inner:nth-child(odd) .text-wrap {
+		margin-top: -70px;
+	}
+
+	.historyNew .his-inner:nth-child(odd) .text-wrap p {
+		line-height: 21px;
+		font-size: 18px;
+	}
+
+	.historyNew .innerhistory {
+		height: 5px;
+		margin-top: 200px;
+	}
+
+	.historyNew .innerhistory:after {
+		height: 20px;
+		width: 20px;
+		margin-top: 2px;
+	}
+
+	.historyNew .innerhistory:before {
+		border-bottom: 10px solid #008F42;
+		border-right: 10px solid transparent;
+		border-left: 10px solid transparent;
+	}
+
+	.historyNew .timeLineContainer .scrollBtns {
+		margin-top: -100px;
+	}
+
+	.historyNew .timeLineContainer {
+		padding-bottom: 0px;
+	}
+}
+
+@media (max-width:450px){
+    .historyNew .fontsig {
+        font-size: 35px;
+	}
+}
